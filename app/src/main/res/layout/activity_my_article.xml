@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.androidtown.wantyou.LikeBoxActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내가 쓴 글"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_import_contacts_primary_24dp"
+                android:drawableStart="@drawable/ic_import_contacts_primary_24dp"
+                android:gravity="center"
+                android:text=" 스터디"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ListView
+                android:id="@+id/likeStudyList"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:dividerHeight="2dp"
+                android:divider="#F6CECE"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_assignment_primary_24dp"
+                android:drawableStart="@drawable/ic_assignment_primary_24dp"
+                android:gravity="center"
+                android:text=" 공모전"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/likeNoticeList"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:dividerHeight="2dp"
+                android:divider="#F6CECE"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

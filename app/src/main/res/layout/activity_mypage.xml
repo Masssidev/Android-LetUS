@@ -1,0 +1,183 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mypage"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="홍길동"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/emailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="이메일@email.com"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/myInfoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_portrait_black_24dp"
+        android:gravity="center_vertical"
+        android:padding="0dp"
+        android:text="  내정보 수정"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/myArticleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_create_black_24dp"
+        android:gravity="center_vertical"
+        android:padding="0dp"
+        android:text="  내가 쓴 글"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/myStudyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_group_add_black_24dp"
+        android:gravity="center_vertical"
+        android:padding="0dp"
+        android:text="  my 스터디"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/createStudyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_import_contacts_black_30dp"
+        android:gravity="center_vertical"
+        android:text="  스터디 등록"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/createNoticeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_assignment_black_30dp"
+        android:gravity="center_vertical"
+        android:text="  공모전 등록"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/messageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:gravity="center_vertical"
+            android:text="  쪽지"
+            android:textSize="15dp"
+            android:layout_weight="0.72" />
+
+        <LinearLayout
+            android:id="@+id/display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/display"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <TextView
+                android:id="@+id/countText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/likeBoxText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_favorite_border_black_30dp"
+        android:gravity="center_vertical"
+        android:text="  찜목록"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/searchStudyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_search_black_24dp"
+        android:gravity="center_vertical"
+        android:text="  스터디 검색"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/searchNoticeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_search_black_24dp"
+        android:gravity="center_vertical"
+        android:text="  공모전 검색"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/logoutText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_exit_to_app_black_24dp"
+        android:gravity="center_vertical"
+        android:text="  로그아웃"
+        android:textSize="15dp" />
+
+</LinearLayout>

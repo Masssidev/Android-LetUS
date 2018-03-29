@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category">
+        <item>분야</item>
+        <item>IT</item>
+        <item>뷰티</item>
+        <item>자격증</item>
+    </string-array>
+</resources>

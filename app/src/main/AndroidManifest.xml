@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.androidtown.wantyou">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".FindActivity" />
+        <activity android:name=".ChangeActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SendMessageActivity" />
+        <activity android:name=".MessageBoxActivity" />
+        <activity android:name=".ReceivedBoxActivity" />
+        <activity android:name=".SentBoxActivity" />
+        <activity android:name=".SentMessageActivity" />
+        <activity android:name=".ReceivedMessageActivity" />
+        <activity android:name=".CreateNoticeActivity" />
+        <activity android:name=".CreateStudyActivity" />
+        <activity android:name=".SelectedFairActivity" />
+        <activity android:name=".SelectedStudyActivity" />
+        <activity android:name=".LikeBoxActivity" />
+        <activity android:name=".ResultStudyActivity" />
+        <activity android:name=".ResultNoticeActivity" />
+        <activity android:name=".MyArticleActivity" />
+        <activity android:name=".EditMyStudyActivity" />
+        <activity android:name=".EditMyNoticeActivity" />
+        <activity android:name=".MyStudyActivity" />
+        <activity android:name=".MemberActivity"></activity>
+    </application>
+
+</manifest>

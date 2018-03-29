@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">wantyou</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="fair_content"> 2017 서울시 앱 공모전 (서울시를 이겨라!) \n
+●  공모 대상 \n
+   - 스마트폰 애플리케이션 (앱)
+\n\n
+●  응모 일정\n
+   - 접수기간 : 2017. 6. 1(목) ~ 10. 31(화) 18:00 마감\n
+   - 서울시 모바일플랫폼 (mplatform.seoul.go.kr) : 회원가입 후 참가신청 (접수마감 전까지 등록한 참가신청서 수정 가능)\n
+\n
+● 참가 자격\n
+   - 지역·학력 제한 없음 (팀일 경우 10명이하)\n
+\n
+●  응모 주제\n
+   - 자유공모 : 서울시와 관련된 공익성을 담은 작품\n
+   - 지정공모 : ‘서울시 공공 앱 주요기능 API’를 활용한 작품\n
+\n
+● 시상 내역\n
+  - 으뜸상 (1팀) : 상장 및 상금 각 500만원\n
+   - 열정상 (3팀) : 상장 및 상금 각 300만원\n
+   - 발전상 (7팀) : 상장 및 상금 각 200만원\n
+   - 장려상 (16팀) : 상장 및 상금 각 50만원\n
+\n
+● 문의 사항\n
+   - 연락처 : 02-2133-2952\n
+   - 이메일 : baekdoo1@seoul.go.kr\n
+   - 홈페이지 : mplatform.seoul.go.kr</string>
+</resources>

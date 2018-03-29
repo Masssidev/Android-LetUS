@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_send_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.androidtown.wantyou.SendMessageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="쪽지 보내기"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_stop_black_24dp"
+                android:drawableStart="@drawable/ic_stop_black_24dp"
+                android:gravity="center_vertical"
+                android:text="쪽지 보내기"
+                android:textColor="#5e5d5d"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="받는사람: "
+                    android:textColor="#5e5d5d"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/receiverText"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edit"
+                    android:hint="닉네임을 입력해주세요"
+                    android:padding="10dp"
+                    android:textColor="#cd5c5c"
+                    android:textColorHint="#cd5c5c" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/content"
+                android:layout_width="350dp"
+                android:layout_height="280dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit"
+                android:gravity="top"
+                android:hint="내용을 입력해주세요"
+                android:padding="10dp"
+                android:textColor="#cd5c5c"
+                android:textColorHint="#cd5c5c" />
+
+            <Button
+                android:id="@+id/sendButton"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button"
+                android:text="보내기"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
